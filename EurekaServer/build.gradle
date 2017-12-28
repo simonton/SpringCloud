@@ -1,0 +1,23 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	
+	dependencies {
+		classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE'
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.cloud:spring-cloud-starter-eureka-server:1.2.7.RELEASE'
+    compile 'junit:junit:4.12'
+}
+
